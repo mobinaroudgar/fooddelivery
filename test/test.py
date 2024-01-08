@@ -49,7 +49,7 @@ from model.entity import *
 # print(FoodOrderController.find_all())
 # print(FoodOrderController.find_by_customer_id([1]))
 # print((customer_id)[0])
-print(FoodOrderController.find_by_id(1))
+# print(FoodOrderController.find_by_id(1))
 # print(FoodOrderController.find_by_customer_id(15))
 
 # MenuController.save("bergurwwmrftf",100000)
@@ -65,17 +65,24 @@ print(FoodOrderController.find_by_id(1))
 # da.save(foodorder)
 
 
-# print(OrderMenuItemController.save(11,12,10))
+
 # print(OrderMenuItemController.save(13,10,5))
 # CustomerController.save("amirali","alipounr","a@ajli.com","fhhrgrgr")
 # MenuController.save("pitzzza",20)
 # FoodOrderController.save(20,1,datetime.now(),1521)
-#print(OrderMenuItemController.save(11, 13, 7))
+# print(OrderMenuItemController.save(1, 1, 1000))
 #print(OrderMenuItemController.edit(9,11,10,9))
 #da=FoodOrderDa()
 #food_order = FoodOrderController.find_by_id(11)
-#print(food_order[0])
+#print
 
+print(OrderMenuItemController.save(1,1,10))
+
+menu_itemm = MenuController.find_by_id(1)
+print(menu_itemm[1])
+
+x = FoodOrderController.find_by_id(1)
+print(x[1])
 
 #menu_iteam=MenuController.find_by_id(10)
 #print(menu_iteam[0])

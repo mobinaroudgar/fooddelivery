@@ -26,3 +26,4 @@ class FoodOrderDa(DataBaseManager):
         result = self.session.query(FoodOrder).filter(FoodOrder.order_item == order_item).all()
         self.session.close()
         return result
+
