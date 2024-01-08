@@ -9,8 +9,9 @@ class Customer(Base):
     id = Column(Integer, primary_key=True)
     first_name = Column(String(30))
     last_name = Column(String(30))
-    email = Column(String(500), unique=True)
-    password = Column(String(500))
+    email = Column(String(40), unique=True)
+    password = Column(String(40))
+    address=Column(String(300))
 
     orders = relationship("FoodOrder", back_populates="customer")
 
