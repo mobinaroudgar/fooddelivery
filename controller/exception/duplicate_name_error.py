@@ -1,0 +1,2 @@
+class DuplicateNameError(Exception):
+    pass
