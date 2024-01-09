@@ -68,7 +68,7 @@ def forget():
     #if request.form.get("password") == request.form.get("forget_password"):
          #status , data = CustomerController.save(
         # request.form.get("password")
- return render_template("forgot-password.html")
+ #return render_template("forgot-password.html")
 
 
 #@app.route("/logout")
