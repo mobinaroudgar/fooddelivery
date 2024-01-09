@@ -6,7 +6,14 @@ from model.da.database import *
 from model.entity import *
 
 # da = CustomerDa()
+#print(CustomerController.save("Mobina", "Roudgar", "roudgarmobina@gmail.com", "mobinarou80", "Nfabovat St"))
+#print(CustomerController.save("Ali", "Alipour", "ali123@gmail.com", "rtyd", "328 Sq"))
 
+#da.save(customer)
+
+#print()
+#customer = Customer("hosein", "alipour", "ahyhliina@gmail.com", "mobffnarou8ll0i", "Nfabovat St")
+#da.edit(customer)
 # menuorder=da.find_by_id(OrderMenuItem,10)
 # x = da.find_by_id(Customer, 19)
 # print(x.id)
@@ -65,25 +72,23 @@ from model.entity import *
 # da.save(foodorder)
 
 
-
 # print(OrderMenuItemController.save(13,10,5))
 # CustomerController.save("amirali","alipounr","a@ajli.com","fhhrgrgr")
 # MenuController.save("pitzzza",20)
 # FoodOrderController.save(20,1,datetime.now(),1521)
 # print(OrderMenuItemController.save(1, 1, 1000))
-#print(OrderMenuItemController.edit(9,11,10,9))
-#da=FoodOrderDa()
-#food_order = FoodOrderController.find_by_id(11)
-#print
+# print(OrderMenuItemController.edit(9,11,10,9))
+# da=FoodOrderDa()
+# food_order = FoodOrderController.find_by_id(11)
+# print
 
-print(OrderMenuItemController.save(1,1,10))
+#print(OrderMenuItemController.save(1, 1, 10))
 
-menu_itemm = MenuController.find_by_id(1)
-print(menu_itemm[1])
+#menu_itemm = MenuController.find_by_id(1)
+#print(menu_itemm[1])
 
-x = FoodOrderController.find_by_id(1)
-print(x[1])
+#x = FoodOrderController.find_by_id(1)
+#print(x[1])
 
-#menu_iteam=MenuController.find_by_id(10)
-#print(menu_iteam[0])
-
+# menu_iteam=MenuController.find_by_id(10)
+# print(menu_iteam[0])

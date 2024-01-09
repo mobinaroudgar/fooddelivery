@@ -39,7 +39,7 @@ class OrderMenuItemController:
     def remove(cls, id):
         try:
             da = OrderMenuDa()
-            ordermenuitem = da.find_by_food_order_id(OrderMenuItem, id)
+            ordermenuitem = da.find_by_id(OrderMenuItem, id)
             return True, da.remove(ordermenuitem)
         except Exception as e:
             return False, str(e)

@@ -5,11 +5,11 @@ from model.entity import *
 
 class CustomerController:
     @classmethod
-    def save(cls, name, family, email, password):
+    def save(cls, name, family, email, password,address):
         try:
             da = CustomerDa()
             if not da.find_by_email(email):
-                customer = Customer(name, family, email, password)
+                customer = Customer(name, family, email, password,address)
                 da.save(customer)
                 return True, customer
             else:
@@ -18,10 +18,10 @@ class CustomerController:
             return False, str(e)
 
     @classmethod
-    def edit(cls, id, first_name, last_name, password, email):
+    def edit(cls, id, first_name, last_name, email, password,address):
         try:
             da = CustomerDa()
-            customer = Customer(first_name, last_name, email, password)
+            customer = Customer(first_name, last_name, email, password,address)
             customer.id = id
             da.edit(customer)
             return True, customer
