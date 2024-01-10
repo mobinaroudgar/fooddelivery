@@ -3,7 +3,7 @@ from flask import Flask, render_template, redirect, request, session
 from controller import *
 from flask_session import Session
 
-app = Flask(__name__, template_folder="view", static_folder="view/static")
+app = Flask(__name__, template_folder="view", static_folder="view/statics")
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_PERMANENT"] = "filesystem"
 Session(app)
@@ -26,6 +26,22 @@ def login():
         else:
             message = data
     return render_template("index.html", message=message)
+@app.route("/signup", methods=["POST", "GET"])
+def signup():
+    if request.method == "POST":
+        name = request.form.get("name")
+        family = request.form.get("family")
+        username = request.form.get("username")
+        password =  request.form.get("password")
+
+    status, data = CustomerController.save(name, family ,username , password)
+    #if status:
+
+            #session["username"] = username
+           # return render_template("signup.html", siginup=data)
+        #else:
+          #  message = data
+    return render_template("signup.html")
 
 @app.route("/customer", methods=["POST", "GET", "DELETE"])
 def customer():
@@ -43,23 +59,6 @@ def customer():
 
     # return data, 204
     return render_template("customer.html", profile=CustomerController.find_by_email(session.get("email"))[1])
-
-
-@app.route("/register", methods=["POST", "GET"])
-def register():
-    if request.method == "POST":
-        # if request.form.get("password") == request.form.get("repeat_password"):
-
-        status, data = CustomerController.save(
-            request.form.get("name"),
-            request.form.get("family"),
-            request.form.get("email"),
-            request.form.get("password"))
-
-
-        return render_template("signup.html")
-
-
 
 
 @app.route("/forget")
