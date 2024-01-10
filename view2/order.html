@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MftFoodDelivery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="csrf-token" content="kmapods5wQ5L1hn7rcR9OPst7EsN0gC7SrHh3m9K"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,600,700">
+    <link media="all" type="text/css" rel="stylesheet" href="static/scsss/bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="static/scsss/style.css?v=1.0">
+    <link media="all" type="text/css" rel="stylesheet" href="static/scsss/custom.css?v=1.3.3">
+       <link rel="stylesheet" href="static/scss/bootstrap.min.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="static/scss/owl.carousel.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="static/scss/responsive.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="static/scss/style.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="static/images/loading.gif" alt="" /></div>
+    </div>
+
+    <div class="wrapper">
+    <!-- end loader -->
+
+     <div class="sidebar">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+
+                <div id="dismiss">
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+
+                <ul class="list-unstyled components">
+
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="recipe.html">Recipe</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+    <div id="content">
+    <!-- header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="full">
+                        <a class="logo" href="index.html"><img src="static/images/logo.png" alt="#" /></a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="full">
+                        <div class="right_header_info">
+                            <ul>
+                                <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="static/images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
+                                <li class="dinone"><img style="margin-right: 15px;" src="static/images/mail_icon.png" alt="#"><a href="#">demo@gmail.com</a></li>
+                                <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="static/images/location_icon.png" alt="#"><a href="#">104 New york , USA</a></li>
+                                <li class="button_user"><a class="button active" href="login.html">Login</a><a class="button" href="signup.html">Register</a></li>
+                                <li>
+                                    <button type="button" id="sidebarCollapse">
+                                        <img src="static/images/menu_icon.png" alt="#">
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<div class="container">
+
+    <div class="header content rows-content-header">
+        <button class="button-menu-mobile show-sidebar">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav visible-lg visible-md limit-chars">
+                        <ul class="breadcrumb">
+                            <a href="index.html">
+                                <i class="zmdi zmdi-view-dashboard zmdi-hc-fw" data-toggle="tooltip" data-placement="bottom" title="Dashboard"></i>
+                            </a>
+                            <a href="manage-product.html">
+                                <i class="zmdi zmdi-assignment zmdi-hc-fw" data-toggle="tooltip" data-placement="bottom" title="Products"></i>
+                            </a>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right content-page">
+        <div class="body content rows scroll-y">
+            <form action="">
+                <div class="box-info full" id="taskFormContainer">
+                    <h2>New Order
+                        <input name="customerName" id="customerName" type="text" class="form-control" placeholder="Customer Name" style="max-width:230px; float: right;margin-top: -11px">
+                    </h2>
+                    <div class="row" style="margin-bottom: 5px;margin-top: -10px;">
+                        <div class="col-sm-12">
+                            <div class="col-sm-4">
+                                <label >Product</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <label >Price</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <label >Quantity</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <label >Total</label>
+                                <button class="btn btn-sm btn-primary pull-right" style="margin-top: -5px" type="button" id="addMoreButton">Add More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box-extra" id="itemsInOrder">
+
+                </div>
+
+                <div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="box-info full p-3 mb-3 mt-0">
+                                <div class="col-sm-9 text-right">
+                                    <span><b>Total</b></span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <b><input id="product_grand_total" name="product_grand_total" class="product-grand-total" value="0.0"></input> Rs</b>
+                                    <button class="btn btn-sm btn-primary pull-right" type="button" id="saveOrder">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="product-box hidden">
+                <div class="row product-item">
+                    <div class="col-sm-12">
+                        <div class="box-info full p-3 mb-3 mt-0">
+                            <div class="col-sm-4">
+                                <select name="product" class="form-control cart-product" style="max-width: 250px"></select>
+                            </div>
+                            <div class="col-sm-3">
+                                <input id="product_price" name="product_price" class="product-price" value="0.0"></input>
+                            </div>
+                            <div class="col-sm-2">
+                                <input name="qty" type="number" min="1" placeholder="" class="form-control product-qty" value="1" style="max-width: 100px">
+                            </div>
+                            <div class="col-sm-3">
+                                <input id="item_total" name="item_total" class="product-total"></input><span> Rs</span>
+                                <button class="btn btn-sm btn-danger pull-right remove-row" type="button">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="static/jss/packages/jquery.min.js"></script>
+<script src="static/jss/custom/common.js"></script>
+<script src=static/jss/custom/order.js"></script>
+    </div>
+     <div class="overlay"></div>
+     <script src="static/jss/packages/jquery.min.js"></script>
+    <script src="static/jss/custom/common.js"></script>
+    <script src="static/jss/custom/dashboard.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/custom.js"></script>
+     <script src="static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+     <script src="static/js/jquery-3.0.0.min.js"></script>
+   <script type="text/javascript">
+        $(document).ready(function() {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+    <style>
+    #owl-demo .item{
+        margin: 3px;
+    }
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    </style>
+
+
+      <script>
+         $(document).ready(function() {
+           var owl = $('.owl-carousel');
+           owl.owlCarousel({
+             margin: 10,
+             nav: true,
+             loop: true,
+             responsive: {
+               0: {
+                 items: 1
+               },
+               600: {
+                 items: 2
+               },
+               1000: {
+                 items: 5
+               }
+             }
+           })
+         })
+      </script>
+
+   </body>
+</html>
