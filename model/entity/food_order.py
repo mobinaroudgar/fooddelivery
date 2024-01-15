@@ -1,11 +1,10 @@
-from datetime import datetime
+'''from datetime import datetime
 from sqlalchemy.orm import relationship
 from model.entity import *
 from sqlalchemy import Integer, String, Column, Boolean, Float, Date, DateTime, ForeignKey
-from model.entity import *
+from model.entity import *'''
 
-
-class FoodOrder(Base):
+'''class FoodOrder(Base):
     __tablename__ = "food_order_tbl"
 
     id = Column(Integer, primary_key=True)
@@ -22,4 +21,4 @@ class FoodOrder(Base):
         self.status = status
         self.date_time = date_time
         self.total_amount = total_amount
-
+'''''

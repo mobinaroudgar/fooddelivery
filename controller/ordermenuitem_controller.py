@@ -4,7 +4,7 @@ from model.entity import *
 from controller.food_order_controller import *
 from controller.menu_controller import *
 
-class OrderMenuItemController:
+'''class OrderMenuItemController:
     @classmethod
     def save(cls, food_order_id, menu_item_id, quantity_ordered):
         try:
@@ -87,3 +87,4 @@ class OrderMenuItemController:
                 raise NoContentError("There is no food order!")
         except Exception as e:
             return False, str(e)
+'''''

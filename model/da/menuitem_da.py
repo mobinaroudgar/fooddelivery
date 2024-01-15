@@ -1,8 +1,8 @@
-from model.da.database import DataBaseManager
+'''from model.da.database import DataBaseManager
 from model.entity import *
+'''
 
-
-class MenuitemDa(DataBaseManager):
+'''class MenuitemDa(DataBaseManager):
     def find_by_item_name(self, item_name):
         self.make_engine()
         menuitem_list = self.session.query(Menu).filter(Menu.item_name.like(f"%{item_name}%")).all()
@@ -15,3 +15,4 @@ class MenuitemDa(DataBaseManager):
         self.session.close()
         return menuitem_list
 
+'''

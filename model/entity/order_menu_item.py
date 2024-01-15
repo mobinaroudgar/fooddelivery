@@ -1,9 +1,9 @@
-from sqlalchemy.orm import relationship
+'''from sqlalchemy.orm import relationship
 from model.entity import *
 from sqlalchemy import Integer, String, Column, Boolean, Date, DateTime, ForeignKey
+'''
 
-
-class OrderMenuItem(Base):
+'''class OrderMenuItem(Base):
     __tablename__ = "order_menu_item"
 
     id = Column(Integer, primary_key=True)
@@ -19,3 +19,4 @@ class OrderMenuItem(Base):
         self.food_order = food_order
         self.menu_item = menu_item
         self.quantity_ordered = quantity_ordered
+'''

@@ -1,10 +1,10 @@
-from sqlalchemy.orm import relationship
+'''from sqlalchemy.orm import relationship
 
 from model.entity import *
 from sqlalchemy import Integer, String, Column, Boolean, Date, DateTime, Float
+'''
 
-
-class Menu(Base):
+''''class Menu(Base):
     __tablename__ = "menu_item_tbl"
 
     id = Column(Integer, primary_key=True)
@@ -16,3 +16,4 @@ class Menu(Base):
     def __init__(self, item_name, price):
         self.item_name = item_name
         self.price = price
+'''''

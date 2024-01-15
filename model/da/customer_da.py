@@ -1,8 +1,8 @@
-from model.da.database import *
+'''from model.da.database import *
 from model.entity import *
+'''
 
-
-class CustomerDa(DataBaseManager):
+'''class CustomerDa(DataBaseManager):
     def find_by_email_password(self, email, password):
         self.make_engine()
         result = self.session.query(Customer).filter(
@@ -15,3 +15,11 @@ class CustomerDa(DataBaseManager):
         result = self.session.query(Customer).filter(Customer.email == email).all()
         if result:
             return result[0]
+
+    def find_by_phone_number(self, phone_number):
+        self.make_engine()
+        result = self.session.query(Customer).filter(Customer.phone_number == phone_number).all()
+        if result:
+            return result[0]
+
+'''

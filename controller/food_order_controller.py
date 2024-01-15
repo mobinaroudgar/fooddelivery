@@ -3,7 +3,7 @@ from model.da import *
 from model.entity import *
 
 
-class FoodOrderController:
+''''class FoodOrderController:
     @classmethod
     def save(cls, customer_id, status, date_time, total_amount):
         try:
@@ -70,3 +70,4 @@ class FoodOrderController:
         except Exception as e:
             return False, str(e)
 
+'''''

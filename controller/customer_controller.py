@@ -1,9 +1,10 @@
-from controller import *
+''''from controller import *
 from model.da import *
 from model.entity import *
 
+'''
 
-class CustomerController:
+'''class CustomerController:
     @classmethod
     def save(cls, name, family, email, password,address):
         try:
@@ -77,3 +78,4 @@ class CustomerController:
                 raise AccessDeniedError("wrong email/password")
         except Exception as e:
             return False, str(e)
+'''''

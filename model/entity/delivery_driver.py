@@ -1,9 +1,7 @@
-'''
-
 from model.entity import Base
 from sqlalchemy import Integer, String, Column, Boolean, Float, Date, DateTime, ForeignKey
 
-
+''''
 class DeliveryDriver(Base):
     __tablename__ = "delivery_driver_tbl"
 

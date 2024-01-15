@@ -3,7 +3,7 @@ from model.da import *
 from model.entity import *
 
 
-class MenuController:
+'''class MenuController:
     @classmethod
     def save(cls, item_name, price):
         try:
@@ -74,3 +74,4 @@ class MenuController:
             return True, da.find_by_order_menu(order_menu)
         except Exception as e:
             return False, str(e)
+'''''

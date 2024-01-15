@@ -1,8 +1,8 @@
-from model.entity import *
+'''from model.entity import *
 from model.da.database import DataBaseManager, and_
+'''
 
-
-class FoodOrderDa(DataBaseManager):
+'''class FoodOrderDa(DataBaseManager):
     def find_by_customer_id(self, customer_id):
         self.make_engine()
         result = self.session.query(FoodOrder).filter(FoodOrder.customer_id == customer_id).all()
@@ -12,6 +12,12 @@ class FoodOrderDa(DataBaseManager):
     def find_by_customer_email(self, customer_email):
         self.make_engine()
         result = self.session.query(FoodOrder).filter(FoodOrder.customer.email == customer_email).all()
+        self.session.close()
+        return result
+
+    def find_by_customer_phone_number(self, customer_phone_number):
+        self.make_engine()
+        result = self.session.query(FoodOrder).filter(FoodOrder.customer.phone_number == customer_phone_number).all()
         self.session.close()
         return result
 
@@ -27,3 +33,4 @@ class FoodOrderDa(DataBaseManager):
         self.session.close()
         return result
 
+'''

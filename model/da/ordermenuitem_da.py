@@ -1,8 +1,8 @@
-from model.da.database import DataBaseManager
+'''from model.da.database import DataBaseManager
 from model.entity import *
+'''
 
-
-class OrderMenuDa(DataBaseManager):
+'''class OrderMenuDa(DataBaseManager):
     def find_by_food_order_id(self, food_order_id):
         self.make_engine()
         result = self.session.query(OrderMenuItem).filter(OrderMenuItem.food_order_id == food_order_id).all()
@@ -22,3 +22,4 @@ class OrderMenuDa(DataBaseManager):
         return result
 
 
+'''
