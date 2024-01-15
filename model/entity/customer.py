@@ -13,7 +13,7 @@ class Customer(Base):
     email = Column(String(40), unique=True)
     password = Column(String(40))
 
-    #orders = relationship("FoodOrder", back_populates="customer")
+    orders = relationship("FoodOrder", back_populates="customer")
     addresses = relationship("Address", back_populates="customer_address")
 
     def __init__(self, name, family, phone_number, email, password):
