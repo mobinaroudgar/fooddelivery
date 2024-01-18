@@ -6,7 +6,7 @@ from sqlalchemy import Integer, String, Column, Boolean, Date, DateTime, Foreign
 class OrderMenuItem(Base):
     __tablename__ = "order_menu_item"
 
-    # id = Column(Integer, primary_key=True)
+    #id = Column(Integer, primary_key=True)
     food_order_id = Column(Integer, ForeignKey("food_order_tbl.id"))
     menu_item_id = Column(Integer, ForeignKey("menu_item_tbl.id"))
     __table_args__ = (PrimaryKeyConstraint(food_order_id, menu_item_id), {})

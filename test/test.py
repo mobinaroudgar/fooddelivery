@@ -8,10 +8,11 @@ from controller import *
 from model.entity import *
 from model.da.database import DataBaseManager
 from model.entity import Customer, Address
+from model.entity.menu_item import Menu
 
 da = DataBaseManager()
-customer1 = Customer("Mobina","roudgar","093898745210","roudga80mdddobina@gmail.com","mobinarou80")
-da.save(customer1)
+#customer1 = Customer("Mobina","roudgar","093898745210","roudga80mdddobina@gmail.com","mobinarou80")
+#da.save(customer1)
 
 #customer = Customer("ali", "roudgaygdr","09929ff316y485","rouffdgayryasna@gmail.com","mobinarou91")
 #da.save(customer)
@@ -24,3 +25,12 @@ da.save(customer1)
 
 #foodord=FoodOrder(customer1,addres1,driver1,1,datetime.now(),5000)
 #da.save(foodord)
+
+
+
+menu=Menu("PIZZA",None,None)
+da.save(menu)
+
+
+menu1=Menu("peperoni",1,51)
+da.save(menu1)
