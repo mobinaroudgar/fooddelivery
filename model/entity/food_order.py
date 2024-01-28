@@ -23,6 +23,7 @@ class FoodOrder(Base):
     address = relationship("Address", back_populates="order_address")
     delivery = relationship("DeliveryDriver", back_populates="foodorder")
 
+
     def __init__(self, customer, address, delivery, status, date_time, delivery_fee, cust_driver, total_amount):
         self.customer = customer
         self.address = address
