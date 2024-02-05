@@ -1,12 +1,18 @@
-'''from model.entity import *
+from model.entity import *
 from model.da.database import DataBaseManager, and_
-'''
 
-'''class AddressDa(DataBaseManager):
+
+class AddressDa(DataBaseManager):
 
     def find_by_customer_id(self, customer_id):
         self.make_engine()
         result = self.session.query(Address).filter(Address.customer_id == customer_id).all()
+        self.session.close()
+        return result
+
+    def find_by_region(self,region):
+        self.make_engine()
+        result = self.session.query(Address).filter(Address.region == region).all()
         self.session.close()
         return result
 
@@ -27,4 +33,3 @@ from model.da.database import DataBaseManager, and_
         result = self.session.query(Address).filter(Address.address == address).all()
         self.session.close()
         return result
-'''

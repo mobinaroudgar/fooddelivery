@@ -1,8 +1,8 @@
-'''from model.da.database import *
+from model.da.database import *
 from model.entity import *
-'''
 
-'''class CustomerDa(DataBaseManager):
+
+class CustomerDa(DataBaseManager):
     def find_by_email_password(self, email, password):
         self.make_engine()
         result = self.session.query(Customer).filter(
@@ -22,4 +22,3 @@ from model.entity import *
         if result:
             return result[0]
 
-'''

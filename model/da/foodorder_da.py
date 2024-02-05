@@ -1,8 +1,9 @@
-'''from model.entity import *
+from model.entity import *
 from model.da.database import DataBaseManager, and_
-'''
 
-'''class FoodOrderDa(DataBaseManager):
+
+class FoodOrderDa(DataBaseManager):
+
     def find_by_customer_id(self, customer_id):
         self.make_engine()
         result = self.session.query(FoodOrder).filter(FoodOrder.customer_id == customer_id).all()
@@ -20,6 +21,10 @@ from model.da.database import DataBaseManager, and_
         result = self.session.query(FoodOrder).filter(FoodOrder.customer.phone_number == customer_phone_number).all()
         self.session.close()
         return result
+    def find_by_delivery_driver_id(self, delivery_driver_id ):
+        self.make_engine()
+        result=self.session.query(FoodOrder).filter(FoodOrder.delivery_driver_id==delivery_driver_id).all()
+        self.session.close()
 
     def find_by_datetime(self, date_time):
         self.make_engine()
@@ -32,5 +37,3 @@ from model.da.database import DataBaseManager, and_
         result = self.session.query(FoodOrder).filter(FoodOrder.order_item == order_item).all()
         self.session.close()
         return result
-
-'''
