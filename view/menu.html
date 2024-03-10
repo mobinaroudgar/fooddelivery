@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>FoodDelivery</title>
+    <title>تحویل غذا</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="static/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +47,7 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Fooddelivery</h1>
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>تحویل غذا</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -55,48 +55,50 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="menu.html" class="nav-item nav-link active">Menu</a>
+                        <a href="index.html" class="nav-item nav-link active">خانه</a>
+                        <a href="about.html" class="nav-item nav-link">درباره ما</a>
+                        <a href="service.html" class="nav-item nav-link">خدمات</a>
+                        <a href="menu.html" class="nav-item nav-link">فهرست</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">صفحه ها </a>
                             <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item">Booking</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                 <a href="signin.html" class="dropdown-item">Log In</a>
-                                <a href="signup.html" class="dropdown-item">Sign Up</a>
+                                <a href="booking.html" class="dropdown-item">رزرو</a>
+                                <a href="team.html" class="dropdown-item">تیم ما</a>
+                                <a href="testimonial.html" class="dropdown-item">گواهینامه</a>
+                                <a href="signin.html" class="dropdown-item">ورود</a>
+                                <a href="signup.html" class="dropdown-item">ثبت نام </a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">مخاطب</a>
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+                    <a href="order.html" class="btn btn-primary py-2 px-4">اکنون سفارش دهید</a>
                 </div>
             </nav>
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Food Menu</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
-                        </ol>
-                    </nav>
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">از غذای خوشمزه<br> ما لذت ببرید</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">رستوران، فروشگاه غذای آماده، یا مرکز فست فود، که استفاده اصلی در آن تولید غذای آماده برای تحویل به مشتریان واقع در خارج از محل تجاری است.</p>
+                            <a href="/" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">هم اکنون سفارش دهید</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="imgs/hero.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Navbar & Hero End -->
 
 
-       <!-- Menu Start -->
+         <!-- Menu Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
-                    <h1 class="mb-5">Most Popular Items</h1>
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">منو غذا</h5>
+                    <h1 class="mb-5">محبوب ترین آیتم ها</h1>
                 </div>
                 <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
                     <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
@@ -104,8 +106,8 @@
                             <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
                                 <i class="fa fa-coffee fa-2x text-primary"></i>
                                 <div class="ps-3">
-                                    <small class="text-body">Popular</small>
-                                    <h6 class="mt-n1 mb-0">Breakfast</h6>
+                                    <small class="text-body"> محبوب ترین</small>
+                                    <h6 class="mt-n1 mb-0">فست فود ها</h6>
                                 </div>
                             </a>
                         </li>
@@ -113,8 +115,8 @@
                             <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
                                 <i class="fa fa-hamburger fa-2x text-primary"></i>
                                 <div class="ps-3">
-                                    <small class="text-body">Special</small>
-                                    <h6 class="mt-n1 mb-0">Launch</h6>
+                                    <small class="text-body">غذا های</small>
+                                    <h6 class="mt-n1 mb-0">ویژه</h6>
                                 </div>
                             </a>
                         </li>
@@ -122,8 +124,8 @@
                             <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
                                 <i class="fa fa-utensils fa-2x text-primary"></i>
                                 <div class="ps-3">
-                                    <small class="text-body">Lovely</small>
-                                    <h6 class="mt-n1 mb-0">Dinner</h6>
+                                    <small class="text-body">دوست داشتنی ترین </small>
+                                    <h6 class="mt-n1 mb-0">شام</h6>
                                 </div>
                             </a>
                         </li>
@@ -136,11 +138,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/egg.jpg" alt="" style="width: 100px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>OrderEggs</span>
+                                                <span>سفارش نیمرو</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$5</span>
                                             </h5>
-                                            <small class="fst-italic">egg.whites are 90% moisture and 10% protein. The yolks are 50% moisture, 30% fat, and 20% protein</small>
+                                            <small class="fst-italic">سفیده تخم مرغ 90 درصد رطوبت و 10 درصد پروتئین است. زرده 50 درصد رطوبت، 30 درصد چربی و 20 درصد پروتئین است</small>
                                         </div>
                                     </div>
                                 </div>
@@ -149,11 +151,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/w.jpg" alt="" style="width: 120px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Pancakes</span>
+                                                <span>پنکیک</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$10</span>
                                             </h5>
-                                            <small class="fst-italic"> eggs, flour, milk, and a leavening agent such as baking powder</small>
+                                            <small class="fst-italic"> تخم مرغ، آرد، شیر، و یک عامل خمیر کننده مانند بکینگ پودر</small>
                                         </div>
                                     </div>
                                 </div>
@@ -162,11 +164,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/c.jpeg" alt="" style="width: 75px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Avocado toast</span>
+                                                <span> نان تست آواکادو</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$20</span>
                                             </h5>
-                                            <small class="fst-italic">Toast bread, add avocado, smash</small>
+                                            <small class="fst-italic">نان تست، آووکادو اضافه کنید، له کنید</small>
                                         </div>
                                     </div>
                                 </div>
@@ -175,11 +177,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/f.jpg" alt="" style="width: 95px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>French toast</span>
+                                                <span>نان تست فرانسوی</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$15</span>
                                             </h5>
-                                            <small class="fst-italic">sliced bread soaked in beaten eggs and often milk or cream, then pan-fried</small>
+                                            <small class="fst-italic">نان ورقه شده در تخم مرغ زده شده و اغلب شیر یا خامه خیس شده و سپس در ماهیتابه سرخ می شود</small>
                                         </div>
                                     </div>
                                 </div>
@@ -188,11 +190,11 @@
                                         <img class="flex-shrink-1 img-fluid rounded" src="imgs/m.jpg" alt="" style="width: 130px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Oatmeal</span>
+                                                <span>بلغور جو دوسر</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$25</span>
                                             </h5>
-                                            <small class="fst-italic"> oats and a liquid, such as water, cow's milk, or plant-based milk</small>
+                                            <small class="fst-italic">جو و یک مایع مانند آب، شیر گاو یا شیر گیاهی</small>
                                         </div>
                                     </div>
                                 </div>
@@ -201,11 +203,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/Cereal.jpg" alt="" style="width: 145px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Cereal</span>
+                                                <span>غلات</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$7</span>
                                             </h5>
-                                            <small class="fst-italic">oats, farina (wheat), rice, and corn</small>
+                                            <small class="fst-italic">جو، فارینا (گندم)، برنج و ذرت</small>
                                         </div>
                                     </div>
                                 </div>
@@ -214,11 +216,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/u.jpg" alt="" style="width: 77px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>English muffin</span>
+                                                <span>کلوچه انگلیسی</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$12</span>
                                             </h5>
-                                            <small class="fst-italic">Wheat flour, butter, milk, sugar, salt, egg, yeast</small>
+                                            <small class="fst-italic">آرد گندم، کره، شیر، شکر، نمک، تخم مرغ، مخمر</small>
                                         </div>
                                     </div>
                                 </div>
@@ -227,11 +229,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/p.jpg" alt="" style="width: 63px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Bagel and cream</span>
+                                                <span>شیرینی و خامه</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$23</span>
                                             </h5>
-                                            <small class="fst-italic">Plain Bagel: High Protein Wheat Flour, Water</small>
+                                            <small class="fst-italic">نان شیرینی ساده: آرد گندم با پروتئین بالا، آب</small>
                                         </div>
                                     </div>
                                 </div>
@@ -244,11 +246,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/pizza.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Pizza</span>
+                                                <span>پیتزا</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$50</span>
                                             </h5>
-                                            <small class="fst-italic">a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients</small>
+                                            <small class="fst-italic">یک دیسک صاف از خمیر نان که روی آن مقداری ترکیبی از روغن زیتون، پونه کوهی، گوجه فرنگی، زیتون، موزارلا یا پنیر دیگر، و بسیاری مواد دیگر وجود دارد.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -257,11 +259,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/fries.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>French Fries</span>
+                                                <span>سیب زمین فرانسوی</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$10</span>
                                             </h5>
-                                            <small class="fst-italic">Pre-cut, blanched, and frozen russet potatoes</small>
+                                            <small class="fst-italic">سیب زمینی سرخ شده از قبل بریده شده، بلانچ شده و منجمد شده</small>
                                         </div>
                                     </div>
                                 </div>
@@ -270,11 +272,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/burger.jpg" alt="" style="width: 65px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Burger</span>
+                                                <span>هم برگر</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$60</span>
                                             </h5>
-                                            <small class="fst-italic">A burger is a patty of ground beef grilled and placed between two halves of a bun</small>
+                                            <small class="fst-italic">برگر یک نان گوشت چرخ کرده کبابی است که بین دو نیمه نان قرار می گیرد</small>
                                         </div>
                                     </div>
                                 </div>
@@ -283,11 +285,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/crispy.jpg" alt="" style="width: 75px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Fried Chicken</span>
+                                                <span>مرغ سوخاری</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$30</span>
                                             </h5>
-                                            <small class="fst-italic">coated in a flour-based batter that may contain eggs or milk, or they may be dredged in flour or breadcrumbs</small>
+                                            <small class="fst-italic">پوشانده شده در خمیر آرد که ممکن است حاوی تخم مرغ یا شیر باشد یا ممکن است در آرد یا آرد سوخاری لایروبی شود.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -296,11 +298,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/jj.jpg" alt="" style="width: 75px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Onion</span>
+                                                <span>پیاز</span>
                                                  <input type="submit" class="btn btn-primary px-2 "  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$20</span>
                                             </h5>
-                                            <small class="fst-italic"> a cross-sectional "ring" of onion dipped in batter or bread crumbs and then deep fried; a variant is made with onion paste</small>
+                                            <small class="fst-italic">یک "حلقه" پیاز مقطعی که در خمیر یا خرده نان آغشته شده و سپس سرخ شده است. یک نوع آن با خمیر پیاز ساخته شده است</small>
                                         </div>
                                     </div>
                                 </div>
@@ -309,11 +311,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/Chicken_Nuggets.jpg" alt="" style="width: 62px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>ChickenNugget</span>
+                                                <span>ناگت مرغ</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$10</span>
                                             </h5>
-                                            <small class="fst-italic">A chicken nugget is a food product consisting of a small piece of deboned chicken meat</small>
+                                            <small class="fst-italic">ناگت مرغ یک محصول غذایی است که از یک تکه کوچک گوشت مرغ بدون استخوان تشکیل شده است</small>
                                         </div>
                                     </div>
                                 </div>
@@ -322,11 +324,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/t.jpg" alt="" style="width: 45px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Sandwich</span>
+                                                <span>ساندویچ</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$32</span>
                                             </h5>
-                                            <small class="fst-italic"> vegetables, sliced cheese or meat, placed on or between slices of bread</small>
+                                            <small class="fst-italic"> سبزیجات، پنیر یا گوشت تکه‌شده، روی یا بین برش‌های نان قرار می‌گیرد</small>
                                         </div>
                                     </div>
                                 </div>
@@ -335,11 +337,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/fish2.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Fish and chips</span>
+                                                <span>ماهی و چیپس</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$55</span>
                                             </h5>
-                                            <small class="fst-italic">Fish and chips is a traditional British dish consisting of fried fish and thinly sliced fried potatoes</small>
+                                            <small class="fst-italic">ماهی اند چیپس یک غذای سنتی بریتانیایی است که از ماهی سرخ شده و سیب زمینی سرخ شده ورقه ای نازک تشکیل شده است.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -352,11 +354,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/slow.jpg" alt="" style="width: 75px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Bestlasagna</span>
+                                                <span>بهترین لازانیا</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$10</span>
                                             </h5>
-                                            <small class="fst-italic"> you'll find are made from metal, ceramic, or glass</small>
+                                            <small class="fst-italic"> خمیر خمیربرگ آماده یک بسته گوشت چرخ کرده نیم کیلو پیاز سرخ شده ۳ قاشق سوپخوری رب گوجه فرنگی یک قاشق سوپخوری سس سفید ۲ فنجان پنیر پیتزا ۲۰۰ گرم</small>
                                         </div>
                                     </div>
                                 </div>
@@ -365,11 +367,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/ch.jpg" alt="" style="width: 70px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Parmesan</span>
+                                                <span>پارمزان مرغ</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$15</span>
                                             </h5>
-                                            <small class="fst-italic">breaded chicken breast covered in tomato sauce and mozzarella, parmesan, or provolone cheese</small>
+                                            <small class="fst-italic">سینه مرغ سوخاری شده با سس گوجه فرنگی و پنیر موزارلا، پارمزان یا پروولون</small>
                                         </div>
                                     </div>
                                 </div>
@@ -378,11 +380,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/quick.jpg" alt="" style="width: 98px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Meatballs</span>
+                                                <span>کوفته قلقلی</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$20</span>
                                             </h5>
-                                            <small class="fst-italic">meat as the main ingredient, both beef, chicken, fish, shrimp and duck meat</small>
+                                            <small class="fst-italic">گوشت به عنوان ماده اصلی، هر دو گوشت گاو، مرغ، ماهی، میگو و گوشت اردک</small>
                                         </div>
                                     </div>
                                 </div>
@@ -391,11 +393,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/ita.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Italian PastaBake</span>
+                                                <span>پاستا ایتالیایی</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$35</span>
                                             </h5>
-                                            <small class="fst-italic">Italian pasta is made from 100 percent durum wheat</small>
+                                            <small class="fst-italic">پاستا ایتالیایی از 100 درصد گندم دوروم تهیه می شود</small>
                                         </div>
                                     </div>
                                 </div>
@@ -404,11 +406,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/creamy.jpg" alt="" style="width: 120px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Salmon </span>
+                                                <span>ماهی سالمون </span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$20</span>
                                             </h5>
-                                            <small class="fst-italic">sour cream, mustard, lemon, garlic plus a good amount of fresh dill</small>
+                                            <small class="fst-italic">خامه ترش، خردل، لیمو، سیر به اضافه مقدار خوبی شوید تازه</small>
                                         </div>
                                     </div>
                                 </div>
@@ -417,11 +419,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/ll.jpg" alt="" style="width: 68px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>TraditionalLasagna</span>
+                                                <span>لازانیا سنتی</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$10</span>
                                             </h5>
-                                            <small class="fst-italic">ricotta or mozzarella cheese, tomato sauce, meats such as ground beef, pork or chicken, and vegetables such as spinach, zucchini, olives, mushrooms</small>
+                                            <small class="fst-italic">پنیر ریکوتا یا موزارلا، سس گوجه فرنگی، گوشت هایی مانند گوشت چرخ کرده، گوشت خوک یا مرغ و سبزیجاتی مانند اسفناج، کدو سبز، زیتون، قارچ</small>
                                         </div>
                                     </div>
                                 </div>
@@ -430,11 +432,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/chicken.jpg" alt="" style="width: 50px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>FilipinoAdobo</span>
+                                                <span>فیلیپینی Adobo</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now" placeholder="order right now">
                                                 <span class="text-primary">$5</span>
                                             </h5>
-                                            <small class="fst-italic">vinegar, soy sauce or fish sauce, peppercorns, garlic, and bay leaves</small>
+                                            <small class="fst-italic">سرکه، سس سویا یا سس ماهی، دانه فلفل، سیر و برگ بو</small>
                                         </div>
                                     </div>
                                 </div>
@@ -443,11 +445,11 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="imgs/bb.jpg" alt="" style="width: 65px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Sloppy joe sandwich</span>
+                                                <span>ساندویچ جو شلخته</span>
                                                  <input type="submit" class="btn btn-primary px-2"  value="order right now" name="order right now"  placeholder="order right now">
                                                 <span class="text-primary">$25</span>
                                             </h5>
-                                            <small class="fst-italic">ground beef and onions in a tomato-based sauce served on a hamburger bun</small>
+                                            <small class="fst-italic">گوشت چرخ کرده و پیاز در سس گوجه فرنگی که روی نان همبرگر سرو می شود</small>
                                         </div>
                                     </div>
                                 </div>
@@ -465,18 +467,18 @@
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Reservation</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">کمپانی</h4>
+                        <a class="btn btn-link" href="">درباره ما</a>
+                        <a class="btn btn-link" href="">تماس با ما</a>
+                        <a class="btn btn-link" href="">رزوو</a>
+                        <a class="btn btn-link" href="">سیاست حفظ حریم خصوصی</a>
+                        <a class="btn btn-link" href="">شرایط و ضوابط</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">مخاطب</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>تهران</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>مشخص نشده</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>مشخض نشده</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -486,17 +488,17 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
-                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
-                        <p>09AM - 09PM</p>
-                        <h5 class="text-light fw-normal">Sunday</h5>
-                        <p>10AM - 08PM</p>
+                        <h5 class="text-light fw-normal">شنبه - چهارشنبه</h5>
+                        <p>از ساعت 9 صبح تا 5 بعد ازظهر</p>
+                        <h5 class="text-light fw-normal">جمعه</h5>
+                        <p>از 8 تا 10 شب</p>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">خبرنامه</h4>
+                        <p>اخبار های مارو میتونید از فضای مجازی دنبال کنید</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                             <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">ثبت نام</button>
                         </div>
                     </div>
                 </div>
@@ -505,16 +507,14 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                            &copy; <a class="border-bottom" href="#">طراحی شده توسط ario و mobina تمامی حقوق محفوظ است.</a>تحویل غذا
+
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
+                                <a href="">خانه</a>
+                                <a href="">کوکی</a>
+                                <a href="">کمک</a>
                                 <a href="">FQAs</a>
                             </div>
                         </div>
